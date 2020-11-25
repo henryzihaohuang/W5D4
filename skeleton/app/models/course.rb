@@ -33,7 +33,8 @@ class Course < ApplicationRecord
     belongs_to :req,  #(Courses that have prereq)
         primary_key: :id,
         foreign_key: :prereq_id, #this will be the same for both associations
-        class_name: :Course # opposite ref.
+        class_name: :Course, # opposite ref.
+        optional: true   # you dont have to belong to a prereq
     
 
 end
