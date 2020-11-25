@@ -16,4 +16,9 @@ class User < ApplicationRecord
     validates :email, presence: true, uniqueness: true
 
 
+    # def shorten_url(email)
+
+
+    # end
+
 end
