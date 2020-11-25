@@ -16,4 +16,12 @@ class User < ApplicationRecord
         foreign_key: :student_id,
         class_name: :Enrollment
    
+    has_many :enrolled_classes,
+        primary_key: :id,
+        foreign_key: :enrolled_class_id,
+        class_name: :Enrollment
+
+
+        #1. how to update schema
+        #2
 end
